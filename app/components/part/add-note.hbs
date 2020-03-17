@@ -1,0 +1,14 @@
+<div local-class='note {{if this.active 'active'}}'>
+  {{#if this.time}}
+    <span>T: <strong>{{this.time}}</strong></span>
+  {{/if}}
+  {{#if this.pitch}}
+    <span>P: <strong>{{this.pitch}}</strong></span>
+  {{/if}}
+  {{#if this.duration}}
+    <span>D: <strong>{{this.duration}}</strong></span>
+  {{/if}}
+  {{#if this.velocity}}
+    <span>V: <strong>{{this.velocity}}</strong></span>
+  {{/if}}
+</div>

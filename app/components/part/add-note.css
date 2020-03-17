@@ -1,0 +1,9 @@
+.note {
+  margin: 2.5px;
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+.active {
+  background-color: #fa4;
+}
