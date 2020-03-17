@@ -1,0 +1,17 @@
+<h1>Loop</h1>
+
+<Instrument @instrument={{this.piano}} as |i|>
+  <i.part @loop={{2}} @loopEnd='2m' as |p|>
+    <Measure>
+      <p.note @time='0:0' @pitch='C4' />
+      <p.note @time='0:1' @pitch='E4' />
+      <p.note @time='0:2' @pitch='G4' @duration='2n' />
+    </Measure>
+
+    <Measure>
+      <p.note @time='1:0' @pitch='B4' />
+      <p.note @time='1:1' @pitch='C5' />
+      <p.note @time='1:2' @pitch='D5' @duration='2n' />
+    </Measure>
+  </i.part>
+</Instrument>

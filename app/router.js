@@ -11,4 +11,5 @@ Router.map(function() {
   this.route('scale');
   this.route('two-instruments');
   this.route('multi-part');
+  this.route('loop');
 });
