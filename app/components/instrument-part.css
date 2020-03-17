@@ -1,0 +1,37 @@
+.part {
+  padding: 5px;
+  border: 1px solid #ddd;
+  margin: 5px;
+  border-radius: 10px;
+  min-width: 300px;
+}
+
+.header {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mute-button {
+  border-radius: 4px;
+}
+
+.mute-button:focus {
+  outline: none;
+  border-color: #0AF;
+}
+
+.mute-button:active {
+  background-color: #dedede;
+  box-shadow: inset 1px 1px 3px #555;
+}
+
+.muted {
+  background-color: #dedede;
+  box-shadow: inset 1px 1px 3px #555;
+}

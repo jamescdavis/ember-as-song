@@ -1,0 +1,28 @@
+<div {{did-insert this.initPart}} local-class='part'>
+  <div local-class='header'>
+    {{#if this.name}}
+      <strong>{{this.name}}</strong>
+    {{/if}}
+    {{#if @start}}
+      {{if this.name '|'}}
+      Start: <strong>{{@start}}</strong>
+    {{/if}}
+    {{#if @loop}}
+      {{if (or this.name @start) '|'}}
+      Loop: <strong>{{@loop}}</strong>
+    {{/if}}
+    {{#if @loopEnd}}
+      {{if (or this.name @start @loop) '|'}}
+      Loop End: <strong>{{@loopEnd}}</strong>
+    {{/if}}
+  </div>
+  <div local-class='container'>
+    {{yield (hash
+      note=(component 'part/add-note'
+        addNote=this.addNote
+        activeNote=this.activeNote
+      )
+    )}}
+  </div>
+</div>
+
