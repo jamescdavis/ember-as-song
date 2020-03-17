@@ -1,0 +1,21 @@
+.gh-link {
+  text-decoration: none;
+  color: blue;
+}
+
+.gh-link:hover {
+  text-decoration: underline;
+}
+
+.gh-logo {
+  height: 25px;
+}
+
+.demo-list a {
+  text-decoration: none;
+  color: blue;
+}
+
+.demo-list a:hover {
+  text-decoration: underline;
+}
