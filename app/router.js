@@ -14,4 +14,9 @@ Router.map(function() {
   this.route('loop');
   this.route('drum-kit');
   this.route('drum-loop');
+  this.route('song1', function() {
+    this.route('intro');
+    this.route('verse');
+    this.route('chorus');
+  });
 });

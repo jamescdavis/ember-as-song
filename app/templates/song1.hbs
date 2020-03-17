@@ -1,0 +1,30 @@
+<h1 local-class='title'>Song 1</h1>
+
+<Instrument @instrument={{this.drums}} @parallel={{true}} as |i|>
+  <i.part @subInstrument='kick' @loop={{this.measures}} as |p|>
+    <p.note @t='0:0:0' @v={{0.8}} />
+    <p.note @t='0:2:2' />
+    <p.note @t='0:3:0' />
+  </i.part>
+
+  <i.part @subInstrument='snare' @loop={{this.measures}} @volume={{-3}} as |p|>
+    <p.note @t='0:2' @d='2n' />
+  </i.part>
+
+  <i.part @subInstrument='hihat' @loop={{this.measures}} @volume={{-20}} @humanize={{true}} as |p|>
+    <p.note @t='0:0' />
+    <p.note @t='0:1' />
+    <p.note @t='0:2' />
+    <p.note @t='0:3' />
+  </i.part>
+</Instrument>
+
+<hr>
+
+<nav local-class='nav'>
+  <LinkTo @route='song1.intro' local-class='nav-link'>Intro</LinkTo>
+  <LinkTo @route='song1.verse' local-class='nav-link'>Verse</LinkTo>
+  <LinkTo @route='song1.chorus' local-class='nav-link'>Chorus</LinkTo>
+</nav>
+
+{{outlet}}

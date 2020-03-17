@@ -1,0 +1,107 @@
+<Instrument @instrument={{this.bass}} as |i|>
+  <i.part @loop={{12}} as |p|>
+    <p.note @t='0:0'   @p='C2' @d='2n' />
+
+    {{#if this.notLastVerse}}
+      <p.note @t='0:2'   @p='E2' />
+      <p.note @t='0:3'   @p='E2' />
+    {{/if}}
+  </i.part>
+
+  {{#if this.lastVerse}}
+    <i.part @start={{11}} as |p|>
+        <p.note @t='0:1:2' @p='E2' />
+        <p.note @t='0:1:3' @p='F2' />
+        <p.note @t='0:2'   @p='C2' />
+    </i.part>
+  {{/if}}
+</Instrument>
+
+<Instrument @instrument={{this.lead}} as |i|>
+  <i.part @loop={{2}} @loopEnd='2m' as |p|>
+    <Measure>
+      <p.note @t='0:0' @p='C4' @d='2n' />
+      <p.note @t='0:2' @p='G4' @d='2n' />
+      <p.note @t='0:3' @p='E4' @d='2n' />
+    </Measure>
+    <Measure>
+      <p.note @t='1:0' @p='B3' @d='2n' />
+      <p.note @t='1:2' @p='G4' @d='2n' />
+      <p.note @t='1:3' @p='E4' @d='2n' />
+    </Measure>
+  </i.part>
+
+  <i.part @start={{4}} as |p|>
+    <p.note @t='0:0' @p='G3' @d='2n' />
+    <p.note @t='0:2' @p='G3' @d='8n' />
+    <p.note @t='0:2:2' @p='A3' @d='8n' />
+    <p.note @t='0:3:0' @p='B3' @d='4n' />
+  </i.part>
+
+  <i.part @start={{5}} as |p|>
+    <Measure>
+      <p.note @t='0:0' @p='C4' @d='2n' />
+      <p.note @t='0:2' @p='G4' @d='2n' />
+      <p.note @t='0:3' @p='E4' @d='2n' />
+    </Measure>
+    <Measure>
+      <p.note @t='1:0' @p='B4' @d='2n' />
+      <p.note @t='1:2' @p='G4' @d='2n' />
+      <p.note @t='1:3' @p='E4' @d='2n' />
+    </Measure>
+    <Measure>
+      <p.note @t='2:0' @p='C4' @d='2n' />
+      <p.note @t='2:2' @p='G4' @d='2n' />
+      <p.note @t='2:3' @p='E4' @d='2n' />
+    </Measure>
+    <Measure>
+      <p.note @t='3:0' @p='B3' @d='2n' />
+      <p.note @t='3:2' @p='G4' @d='2n' />
+      <p.note @t='3:3' @p='E4' @d='2n' />
+    </Measure>
+  </i.part>
+
+  <i.part @start={{9}} as |p|>
+    <Measure>
+      <p.note @t='0:0' @p='A3' @d='2n' />
+      <p.note @t='0:2' @p='G4' @d='2n' />
+      <p.note @t='0:3' @p='E4' @d='2n' />
+    </Measure>
+
+    {{#if this.notLastVerse}}
+      <Measure>
+        <p.note @t='1:0' @p='B3' @d='2n' />
+        <p.note @t='1:2' @p='G4' @d='2n' />
+        <p.note @t='1:3' @p='E4' @d='2n' />
+      </Measure>
+    {{else}}
+      <Measure>
+        <p.note @t='1:0' @p='G3' @d='2n' />
+        <p.note @t='1:2' @p='E3' @d='2n' />
+        <p.note @t='1:3' @p='G3' @d='2n' />
+        <p.note @t='2:0' @p='C4' @d='2n' />
+      </Measure>
+    {{/if}}
+  </i.part>
+
+  {{#if this.notLastVerse}}
+    <i.part @start={{11}} as |p|>
+      <p.note @t='0:0' @p='G3' @d='2n' />
+      <p.note @t='0:2' @p='G3' @d='8n' />
+      <p.note @t='0:2:2' @p='A3' @d='8n' />
+      <p.note @t='0:3:0' @p='B3' @d='4n' />
+    </i.part>
+  {{/if}}
+</Instrument>
+
+{{#if this.lastVerse}}
+  <Instrument @instrument={{this.drums}} @parallel={{true}} as |i|>
+    <i.part @subInstrument='kick' @start={{11}} as |p|>
+      <p.note @t='0:0' @v={{0.8}} />
+    </i.part>
+
+    <i.part @subInstrument='hihat' @start={{11}} @volume={{-20}} @humanize={{true}} as |p|>
+      <p.note @t='0:0' />
+    </i.part>
+  </Instrument>
+{{/if}}

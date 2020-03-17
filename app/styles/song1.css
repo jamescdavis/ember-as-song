@@ -1,0 +1,21 @@
+.title {
+  margin-bottom: 10px;
+}
+
+.drums {
+  display: flex;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #AAF;
+}
+
+.nav-link:global(.active) {
+  color: #000;
+}
