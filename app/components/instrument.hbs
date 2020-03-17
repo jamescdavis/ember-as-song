@@ -1,0 +1,11 @@
+<h3 local-class='title'>{{@instrument.name}}</h3>
+
+<div local-class='container {{if @parallel 'parallel'}}'>
+  {{yield (hash part=(component 'instrument-part'
+    instrument=@instrument
+    loop=@loop
+    loopEnd=@loopEnd
+    volume=@volume
+    humanize=@humanize
+  ))}}
+</div>

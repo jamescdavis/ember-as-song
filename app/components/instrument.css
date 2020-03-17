@@ -1,0 +1,13 @@
+.title {
+  margin-bottom: 5px;
+}
+
+.container {
+  margin: -5px;
+}
+
+.parallel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
