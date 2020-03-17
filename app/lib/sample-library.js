@@ -1,4 +1,5 @@
 import Tone from 'tone';
+import config from 'ember-get-config';
 
 /**
 * @fileoverview A sample library and quick-loader for tone.js
@@ -7,10 +8,12 @@ import Tone from 'tone';
 * https://github.com/nbrosowsky/tonejs-instruments
 */
 
+const rootURL = config.rootURL === '/' ? '' : config.rootURL;
+
 var SampleLibrary = {
     minify: false,
     ext: '.[mp3|ogg]', // use setExt to change the extensions on all files // do not change this variable //
-    baseUrl: '/assets/samples/',
+    baseUrl: `${rootURL}/assets/samples/`,
     list: [
       'bass-electric',
       'bassoon',
