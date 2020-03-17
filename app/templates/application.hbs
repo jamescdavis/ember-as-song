@@ -1,1 +1,25 @@
+<button type='button' onclick={{this.play}} local-class='button {{if this.playing 'pressed'}}'>
+  Play
+</button>
+
+<button type='button' onclick={{this.pause}} local-class='button {{if this.paused 'pressed'}}'>
+  Pause
+</button>
+
+<button type='button' onclick={{this.stop}} local-class='button'>
+  Stop
+</button>
+
+<button type='button' onclick={{this.mute}} local-class='button {{if this.muted 'pressed'}}'>
+  Mute
+</button>
+
+<button type='button' onclick={{this.volumeDown}} local-class='button'>
+  Vol Down
+</button>
+
+<button type='button' onclick={{this.volumeUp}} local-class='button'>
+  Vol Up
+</button>
+
 {{outlet}}

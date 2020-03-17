@@ -1,0 +1,19 @@
+.button {
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.button:focus {
+  outline: none;
+  border-color: #0AF;
+}
+
+.button:active {
+  background-color: #dedede;
+  box-shadow: inset 1px 1px 3px #555;
+}
+
+.pressed {
+  background-color: #dedede;
+  box-shadow: inset 1px 1px 3px #555;
+}
