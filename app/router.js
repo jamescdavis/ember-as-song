@@ -19,4 +19,5 @@ Router.map(function() {
     this.route('verse');
     this.route('chorus');
   });
+  this.route('baby-shark');
 });
