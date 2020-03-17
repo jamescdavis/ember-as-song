@@ -1,0 +1,29 @@
+<h1>Multi-part</h1>
+
+<Instrument @instrument={{this.flute}} as |i|>
+  <i.part @start={{0}} as |p|>
+    <Measure>
+      <p.note @time='0:0' @pitch='E4' @duration='2n' />
+      <p.note @time='0:2' @pitch='G4' @duration='2n' />
+    </Measure>
+
+    <Measure>
+      <p.note @time='1:0' @pitch='B4' />
+      <p.note @time='1:1' @pitch='C5' />
+      <p.note @time='1:2' @pitch='D5' @duration='2n' />
+    </Measure>
+  </i.part>
+
+  <i.part @start={{2}} as |p|>
+    <Measure>
+      <p.note @time='0:0' @pitch='D5' @duration='4n' />
+      <p.note @time='0:1' @pitch='E4' @duration='4n' />
+      <p.note @time='0:2' @pitch='G4' @duration='2n' />
+    </Measure>
+
+    <Measure>
+      <p.note @time='1:0' @pitch='C5' @duration='2n' />
+      <p.note @time='1:2' @pitch='C4' @duration='2n' />
+    </Measure>
+  </i.part>
+</Instrument>
