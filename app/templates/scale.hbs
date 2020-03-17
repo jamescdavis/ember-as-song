@@ -1,0 +1,19 @@
+<h1>Scale</h1>
+
+<Instrument @instrument={{this.piano}} as |i|>
+  <i.part as |p|>
+    <Measure>
+      <p.note @time='0:0' @pitch='C4' />
+      <p.note @time='0:1' @pitch='D4' />
+      <p.note @time='0:2' @pitch='E4' />
+      <p.note @time='0:3' @pitch='F4' />
+    </Measure>
+
+    <Measure>
+      <p.note @time='1:0' @pitch='G4' />
+      <p.note @time='1:1' @pitch='A4' />
+      <p.note @time='1:2' @pitch='B4' />
+      <p.note @time='1:3' @pitch='C5' />
+    </Measure>
+  </i.part>
+</Instrument>
