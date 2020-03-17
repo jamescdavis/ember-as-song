@@ -1,0 +1,18 @@
+<h1>Drum Loop</h1>
+
+<Instrument @instrument={{this.drums}} @loop={{4}} @parallel={{true}} as |i|>
+  <i.part @subInstrument='kick' as |p|>
+    <p.note @t='0:0:0' />
+  </i.part>
+
+  <i.part @subInstrument='snare' @volume={{-3}} as |p|>
+    <p.note @t='0:2' @d='2n' />
+  </i.part>
+
+  <i.part @subInstrument='hihat' @volume={{-20}} @humanize={{true}} as |p|>
+    <p.note @t='0:0' />
+    <p.note @t='0:1' />
+    <p.note @t='0:2' />
+    <p.note @t='0:3' />
+  </i.part>
+</Instrument>

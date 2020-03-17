@@ -13,4 +13,5 @@ Router.map(function() {
   this.route('multi-part');
   this.route('loop');
   this.route('drum-kit');
+  this.route('drum-loop');
 });
