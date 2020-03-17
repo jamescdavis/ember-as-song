@@ -12,4 +12,5 @@ Router.map(function() {
   this.route('two-instruments');
   this.route('multi-part');
   this.route('loop');
+  this.route('drum-kit');
 });

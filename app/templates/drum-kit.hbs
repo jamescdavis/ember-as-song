@@ -1,0 +1,22 @@
+<Instrument @instrument={{this.drums}} as |i|>
+  <i.part @subInstrument='kick' as |p|>
+    <p.note @t='0:0' />
+    <p.note @t='0:1' />
+    <p.note @t='0:2' />
+    <p.note @t='0:3' />
+  </i.part>
+
+  <i.part @subInstrument='snare' @volume={{-3}} @start={{1}} as |p|>
+    <p.note @t='0:0' @d='2n' />
+    <p.note @t='0:1' @d='2n' />
+    <p.note @t='0:2' @d='2n' />
+    <p.note @t='0:3' @d='2n' />
+  </i.part>
+
+  <i.part @subInstrument='hihat' @volume={{-20}} @humanize={{true}} @start={{2}} as |p|>
+    <p.note @t='0:0' />
+    <p.note @t='0:1' />
+    <p.note @t='0:2' />
+    <p.note @t='0:3' />
+  </i.part>
+</Instrument>
